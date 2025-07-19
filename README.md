@@ -22,7 +22,7 @@ Performed in **MySQL**, cleaning steps included:
 
 * ✅ **Removing Duplicates** using `ROW_NUMBER() OVER (...)` to identify and eliminate exact duplicate rows.
 * ✅ **Trimming Whitespaces** from textual fields like `company`, `industry`, and `country`.
-* ✅ **Standardizing Values** (e.g., normalizing industry names like `'crypto/web3'` → `'Crypto'`).
+* ✅ **Standardizing Values** (e.g., normalizing industry names like `'crypto'` → `'Crypto'`).
 * ✅ **Date Format Conversion**: Converted string-based dates to proper `DATE` format using `STR_TO_DATE()`.
 * ✅ **Handling NULLs**: Filled missing `industry` data using other records from the same company.
 * ✅ **Removing Irrelevant Entries**: Dropped rows where both `total_laid_off` and `percentage_laid_off` were null.
@@ -75,8 +75,7 @@ An interactive dashboard was created to visualize insights from the cleaned data
 
 * **SQL (MySQL)** – Data Cleaning & EDA
 * **Tableau** – Dashboard Creation & Visualization
-* **Python / Excel (optional)** – Initial inspection
-* **Dataset Source** – Assumed to be a publicly available layoff dataset
+* **Dataset Source** – Publicly available layoff dataset
 
 ---
 
@@ -88,11 +87,3 @@ An interactive dashboard was created to visualize insights from the cleaned data
 * `Dashboard 2.png` – Tableau dashboard snapshot
 
 ---
-
-## 📬 Contact
-
-If you'd like to know more or collaborate on similar data analysis projects:
-
-**Author:** *\[Your Name Here]*
-**Email:** *\[[your-email@example.com](mailto:your-email@example.com)]*
-**LinkedIn:** *\[Your LinkedIn Profile]*
